@@ -14,7 +14,7 @@ button.addEventListener('click', function(event) {
  /*transmit data*/ 
   let request = new XMLHttpRequest();
 
-  request.open('POST', "/send.php")
+  request.open('POST', "send.php")
   request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
   request.send('name=' + encodeURIComponent(formData.name) + '&messangerContact=' + encodeURIComponent(formData.messangerContact) + '&messanger=' +  encodeURIComponent(formData.messanger) + '&message=' +    encodeURIComponent(formData.message))
 })
