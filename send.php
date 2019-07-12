@@ -16,8 +16,7 @@ Messanger: $messanger
 Message: $message";
 
 /* send message use mail()  */
-// $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
-  $from = ('From:<'. $address .'> ');
+$from = ('From:<'. $address .'> ');
   
 if (mail($address, $sub, $mes, $from)) {
     header('Refresh: 5; URL=https://denyspopov.com');
