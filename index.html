@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DenysPopov. Website development and support</title>
+  <!--   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<form action="/send.php" method="POST">
+  <label for="name">Name*</label>
+  <input type="text" name="name" id="name">
+  <label for="messanger-contact">Phone number or nickname in the messenger*</label>
+  <input type="text" name="messanger-contact" id="messanger-contact">
+  <label for="messanger">The name of the messenger</label>
+  <input type="text" name="messanger" id="messanger">
+  <label for="message">Message*</label>
+  <textarea name="message" id="message"></textarea>
+  <input type="hidden" name="antispam" >
+  <button type="submit" name="button">Send Message</button>
+</form>
+</body>
